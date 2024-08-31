@@ -1,0 +1,25 @@
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.input {
+  border: 1px solid #333333;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  background: #333333;
+  transition: 0.3s;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  border-color: #9f21fc;
+  background: var(--black-color-1);
+  box-shadow: 0 0 0 1px var(--dark-purple);
+}

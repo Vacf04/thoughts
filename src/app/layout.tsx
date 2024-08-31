@@ -1,11 +1,19 @@
-import { Roboto } from "next/font/google";
+import { Roboto, Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
-import { UserContextProvider, useUser } from "@/context/userContext";
+import { UserContextProvider } from "@/context/userContext";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
-const roboto = Roboto({
+export const roboto = Roboto({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-roboto",
+});
+
+export const ZenMaruGothic = Zen_Maru_Gothic({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-zen",
 });
 
 export default function RootLayout({
@@ -15,9 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.variable} ${ZenMaruGothic.variable}`}>
         <UserContextProvider>
-          <main>{children}</main>
+          <div className="App">
+            <Header />
+            <main className="AppBody">{children}</main>
+            <Footer />
+          </div>
         </UserContextProvider>
       </body>
     </html>

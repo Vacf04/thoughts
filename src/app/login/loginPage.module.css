@@ -1,0 +1,12 @@
+.loginContainer {
+  height: calc(100vh - 6rem);
+}
+
+.loginContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}

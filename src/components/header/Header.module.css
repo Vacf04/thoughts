@@ -1,0 +1,13 @@
+.header {
+  background: var(--black-color-2);
+  height: 6rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

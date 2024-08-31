@@ -1,10 +1,54 @@
+:root {
+  --white-color: #fff;
+  --text-color: #e3e3e3;
+  --dark-purple: #4b0082;
+  --lighter-purple: #cbb9d8;
+  --black-color-1: #1c1c1c;
+  --black-color-2: #121212;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
 .container {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 6rem);
+}
+
+.AppBody {
+  flex: 1;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background: var(--black-color-1);
+  color: var(--text-color);
+}
+
+.animeEntry {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: entryLeft 0.3s forwards;
+}
+
+@keyframes entryLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
