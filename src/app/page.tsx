@@ -1,3 +1,4 @@
+import SendThought from "@/components/homePage/SendThought";
 import User from "@/components/user/User";
 import type { Metadata } from "next";
 
@@ -7,5 +8,10 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <User />;
+  return (
+    <section className="container">
+      <SendThought />
+      <User />
+    </section>
+  );
 }

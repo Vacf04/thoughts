@@ -1,0 +1,21 @@
+.button {
+  background: var(--dark-purple);
+  color: var(--lighter-purple);
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  border-color: #9f21fc;
+  box-shadow: 0 0 0 1px #310055;
+}
